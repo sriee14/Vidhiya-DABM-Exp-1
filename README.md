@@ -71,7 +71,6 @@ Function / Method Description
 
 
 ## Program & Output
-## Input
 
 ## Input
 
@@ -150,44 +149,56 @@ df.head()
 df.tail()
 ```
 
+
+
 ## Output 3
 ```
-S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
-0	1	Female	68	1	1	3	0	1	0	0	237	107.8	71.2	30.9	81	70	0
-1	2	Female	58	4	1	1	0	0	0	0	268	113.2	94.7	26.8	108	58	0
-2	3	Male	44	2	1	6	0	0	0	0	192	132.7	94.8	30.3	104	141	0
-3	4	Male	37	4	1	18	0	0	0	0	250	132.3	74.4	25.8	89	120	0
-4	5	Female	50	1	1	24	0	1	0	0	202	97.5	102.6	22.2	106	84	1
+   S. No  Gender  Age  Education  currentsmoker  Cigsperday  BPMeds  Prevalentstroke  PrevalentHyp  Diabetes  Totalcholestrol  SysBP  DiaBP   BMI  Heartrate  Glucose  TenYearCHD
+0      1  Female   68          1              1           3       0                1             0         0              237  107.8   71.2  30.9         81       70           0
+1      2  Female   58          4              1           1       0                0             0         0              268  113.2   94.7  26.8        108       58           0
+2      3    Male   44          2              1           6       0                0             0         0              192  132.7   94.8  30.3        104      141           0
+3      4    Male   37          4              1          18       0                0             0         0              250  132.3   74.4  25.8         89      120           0
+4      5  Female   50          1              1          24       0                1             0         0              202   97.5  102.6  22.2        106       84           1
 
-S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
-245	246	Male	32	3	1	11	0	0	0	0	232	133.3	84.2	32.6	64	106	0
-246	247	Female	49	3	1	27	1	0	0	0	185	136.5	85.4	22.3	94	58	0
-247	248	Male	53	4	0	0	0	0	0	0	195	122.8	100.8	29.1	101	94	0
-248	249	Male	62	1	1	27	0	0	0	0	246	142.6	80.0	25.9	96	123	0
-249	250	Male	53	3	0	0	0	0	0	0	264	116.9	66.2	35.5	55	82	0
+     S. No  Gender  Age  Education  currentsmoker  Cigsperday  BPMeds  Prevalentstroke  PrevalentHyp  Diabetes  Totalcholestrol  SysBP  DiaBP   BMI  Heartrate  Glucose  TenYearCHD
+245    246    Male   32          3              1          11       0                0             0         0              232  133.3   84.2  32.6         64      106           0
+246    247  Female   49          3              1          27       1                0             0         0              185  136.5   85.4  22.3         94       58           0
+247    248    Male   53          4              0           0       0                0             0         0              195  122.8  100.8  29.1        101       94           0
+248    249    Male   62          1              1          27       0                0             0         0              246  142.6   80.0  25.9         96      123           0
+249    250    Male   53          3              0           0       0                0             0         0              264  116.9   66.2  35.5         55       82           0
 ```
+
+
 ## Input 4
+
 ```
 # Sorting and Grouping
+
 df.sort_values('Education', ascending=True)
 ```
 
 ## Output 4
 ```
-S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
-0	1	Female	68	1	1	3	0	1	0	0	237	107.8	71.2	30.9	81	70	0
-4	5	Female	50	1	1	24	0	1	0	0	202	97.5	102.6	22.2	106	84	1
-6	7	Male	48	1	1	5	0	0	0	0	269	118.0	83.0	26.0	79	82	1
-10	11	Male	53	1	0	0	1	0	1	0	248	138.9	85.1	27.3	58	92	0
-13	14	Female	53	1	0	0	0	0	0	1	317	97.5	95.7	25.8	81	103	0
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-234	235	Male	31	4	0	0	0	0	1	0	201	143.1	73.5	20.2	69	99	0
-232	233	Male	45	4	1	3	0	0	1	0	213	104.6	96.9	25.4	73	93	0
-230	231	Female	64	4	1	26	0	0	0	0	289	129.6	87.3	18.6	101	82	0
-247	248	Male	53	4	0	0	0	0	0	0	195	122.8	100.8	29.1	101	94	0
-241	242	Female	70	4	1	27	1	0	0	0	204	131.7	73.4	32.9	87	92	0
+
+## Output 4
+
+```text id="out4"
+     S. No Gender  Age  Education  currentsmoker  Cigsperday  BPMeds  Prevalentstroke  PrevalentHyp  Diabetes  Totalcholestrol  SysBP  DiaBP   BMI  Heartrate  Glucose  TenYearCHD
+0        1 Female   68          1              1           3       0                1             0         0              237  107.8   71.2  30.9         81       70           0
+4        5 Female   50          1              1          24       0                1             0         0              202   97.5  102.6  22.2        106       84           1
+6        7   Male   48          1              1           5       0                0             0         0              269  118.0   83.0  26.0         79       82           1
+10      11   Male   53          1              0           0       1                0             1         0              248  138.9   85.1  27.3         58       92           0
+13      14 Female   53          1              0           0       0                0             0         1              317   97.5   95.7  25.8         81      103           0
+...     ...    ...  ...        ...            ...         ...     ...              ...           ...       ...              ...    ...    ...   ...        ...      ...         ...
+234    235   Male   31          4              0           0       0                0             1         0              201  143.1   73.5  20.2         69       99           0
+232    233   Male   45          4              1           3       0                0             1         0              213  104.6   96.9  25.4         73       93           0
+230    231 Female   64          4              1          26       0                0             0         0              289  129.6   87.3  18.6        101       82           0
+247    248   Male   53          4              0           0       0                0             0         0              195  122.8  100.8  29.1        101       94           0
+241    242 Female   70          4              1          27       1                0             0         0              204  131.7   73.4  32.9         87       92           0
+
 250 rows × 17 columns
 ```
+
 
 ## Input 5
 ```
@@ -261,6 +272,7 @@ TenYearCHD           0.1840
 dtype: float64
 ```
 ## Input 7
+```
 # Rename a column
 print("\nRenaming 'age' column to 'Age':")
 df.rename(columns={'age': 'Age'}, inplace=True)
@@ -275,7 +287,7 @@ Renaming 'age' column to 'Age':
 print("\nUpdated column names:")
 print(df.columns)
 ```
-## Output8
+## Output 8
 ```
 Updated column names:
 Index(['S. No', 'Gender', 'Age', 'Education', 'currentsmoker', 'Cigsperday',
