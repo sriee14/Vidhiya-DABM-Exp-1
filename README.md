@@ -28,20 +28,14 @@ The dataset is opened and analyzed using Jupyter Notebook to study its data stru
 
 Function/Method Descriptive
 ---------------------- ------------------------------------------------------
-```
+
 pd.read_csv() Reads a CSV file into a Pandas DataFrame.
-df.info() Displays column names, data types, and memory usage.
-df.dtypes Returns the data types of all columns.
-df['column'].dtype Returns the data type of a specific column.
-df.describe() Provides summary statistics for numerical columns.
-df.head() Displays the first 5 rows of the DataFrame.
-df.tail() Displays the last 5 rows of the DataFrame.\
-```
+
 
 ### 2. Sorting and Grouping
 
 Function / Method Description
-```
+````
 df.sort_values() Sorts the DataFrame by one or more columns.
 df.groupby() Groups data based on one or more columns.
 groupby.sum() Returns the sum for each group.
@@ -49,7 +43,7 @@ groupby.mean() Returns the mean for each group.
 groupby.median() Returns the median for each group.
 groupby.max() Returns the maximum value in each group.
 groupby.min() Returns the minimum value in each group.
-```
+````
 
 ### 3. Data Summary and Manipulation
 
