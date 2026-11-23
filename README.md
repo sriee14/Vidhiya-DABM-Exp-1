@@ -29,13 +29,13 @@ The dataset is opened and analyzed using Jupyter Notebook to study its data stru
 Function/Method Descriptive
 ### ---------------------- ------------------------------------------------------
 
-pd.read_csv() Reads a CSV file into a Pandas DataFrame.                                            
-df.info() Displays column names, data types, and memory usage.                                               
-df.dtypes Returns the data types of all columns.                                                    
-df['column'].dtype Returns the data type of a specific column.                                           
-df.describe() Provides summary statistics for numerical columns.                                             
-df.head() Displays the first 5 rows of the DataFrame.                                                    
-df.tail() Displays the last 5 rows of the DataFrame.\
+pd.read_csv()  Reads a CSV file into a Pandas DataFrame.                                            
+df.info()  Displays column names, data types, and memory usage.                                               
+df.dtypes  Returns the data types of all columns.                                                    
+df['column'].dtype  Returns the data type of a specific column.                                           
+df.describe()  Provides summary statistics for numerical columns.                                             
+df.head()  Displays the first 5 rows of the DataFrame.                                                    
+df.tail()  Displays the last 5 rows of the DataFrame.\
 
 
 ### 2. Sorting and Grouping
