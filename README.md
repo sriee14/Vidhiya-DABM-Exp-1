@@ -159,7 +159,6 @@ S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	Preva
 3	4	Male	37	4	1	18	0	0	0	0	250	132.3	74.4	25.8	89	120	0
 4	5	Female	50	1	1	24	0	1	0	0	202	97.5	102.6	22.2	106	84	1
 
-
 S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
 245	246	Male	32	3	1	11	0	0	0	0	232	133.3	84.2	32.6	64	106	0
 246	247	Female	49	3	1	27	1	0	0	0	185	136.5	85.4	22.3	94	58	0
