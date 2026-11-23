@@ -10,107 +10,89 @@ The dataset used for this experiment is heartdisease.csv. It contains medical an
 
 The dataset is opened and analyzed using Jupyter Notebook to study its data structure, identify data types, and perform basic statistical analysis for data-cleaning and preprocessing purposes.
 
-## Algorithm
 
-1.Import essential Python libraries.
-2.Load the dataset using Pandas.
-3.View the dataset structure, data types, and memory usage.
-4.Check for missing values and duplicates.
-5.Perform data summary statistics using describe().
-6.View initial and final records using head() and tail().
-7.Sort and group the data based on key attributes.
-8.Rename columns or modify data where necessary.
-9.Save the cleaned dataset for further analysis.
+## Algorithm
+1. Import essential Python libraries.
+2. Load the dataset using Pandas.
+3. View the dataset structure, data types, and memory usage.
+4. Check for missing values and duplicates.
+5. Perform data summary statistics using `describe()`.
+6. View initial and final records using `head()` and `tail()`.
+7. Sort and group the data based on key attributes.
+8. Rename columns or modify data where necessary.
+9. Save the cleaned dataset for further analysis.
 
 ## Functions and Methods Used in the Experiment
 
-### 1.Data Loading and Basic Exploration
+### 1. Data Loading and Basic Exploration
 
+Function / Method Description
 
+`----------------- --------------------------------------------------`
 
-Function / Method  Description
------------------------  ------------------------------------
-
-`pd.read_csv()` Reads a CSV file into a Pandas DataFrame.
-
-`df.info()` Displays column names, data types, and memory usage.
-
-`df.dtypes`  Returns the data types of all columns.
-
-`df['column'].dtype` Returns the data type of a specific column.
-
-`df.describe()`  Provides summary statistics for numerical columns.
-
-`df.head()`  Displays the first 5 rows of the DataFrame.
-
-`df.tail()`  Displays the last 5 rows of the DataFrame.
-
-## 2. Sorting and Grouping
-
-**Function / Method** | **Description**
---- | ---
-
-`df.sort_values()` | Sorts the DataFrame by one or more columns.
-
-`df.groupby()` | Groups data based on one or more columns.
-
-`groupby.sum()` | Returns the sum for each group.
-
-`groupby.mean()` | Returns the mean for each group.
-
-`groupby.median()` | Returns the median for each group.
-
-`groupby.max()` | Returns the maximum value in each group.
-
-`groupby.min()` | Returns the minimum value in each group.
-
-
+`pd.read_csv()` Reads a CSV file into a Pandas DataFrame.  
+`df.info()` Displays column names, data types, and memory usage.  
+`df.dtypes` Returns the data types of all columns.  
+`df['column'].dtype` Returns the data type of a specific column.  
+`df.describe()` Provides summary statistics for numerical columns.  
+`df.head()` Displays the first 5 rows of the DataFrame.  
+`df.tail()` Displays the last 5 rows of the DataFrame.
 
 ### 2. Sorting and Grouping
 
 Function / Method Description
 
-df.sort_values() Sorts the DataFrame by one or more columns.
-df.groupby() Groups data based on one or more columns.
-groupby.sum() Returns the sum for each group.
-groupby.mean() Returns the mean for each group.
-groupby.median() Returns the median for each group.
-groupby.max() Returns the maximum value in each group.
-groupby.min() Returns the minimum value in each group.
-
+`df.sort_values()` Sorts the DataFrame by one or more columns.  
+`df.groupby()` Groups data based on one or more columns.  
+`groupby.sum()` Returns the sum for each group.  
+`groupby.mean()` Returns the mean for each group.  
+`groupby.median()` Returns the median for each group.  
+`groupby.max()` Returns the maximum value in each group.  
+`groupby.min()` Returns the minimum value in each group.
 
 ### 3. Data Summary and Manipulation
 
 Function / Method Description
 
-df.mean() Calculates the mean for all numeric columns.
-df.rename() Renames columns in the DataFrame.
+`df.mean()` Calculates the mean for all numeric columns.  
+`df.rename()` Renames columns in the DataFrame.
 
 ### 4. Optional Additions
+
 Function / Method Description
 
-df.isnull().sum() Checks for missing values in each column.
-df.duplicated().sum() Counts duplicate rows.
-
-df.dropna() Removes rows containing missing values.
-df.fillna() Fills missing values with a specified value.
-df.drop_duplicates() Removes duplicate rows.
-df.shape Returns the number of rows and columns.
-df.columns Lists column names in the DataFrame.
-
+`df.isnull().sum()` Checks for missing values in each column.  
+`df.duplicated().sum()` Counts duplicate rows.  
+`df.dropna()` Removes rows containing missing values.  
+`df.fillna()` Fills missing values with a specified value.  
+`df.drop_duplicates()` Removes duplicate rows.  
+`df.shape` Returns the number of rows and columns.  
+`df.columns` Lists column names in the DataFrame.
 
 
+## Program & Output
+## Input
 
+## Input
 
-Program
-Input
-#Import essential Libraries import numpy as np import pandas as pd import matplotlib.pyplot as plt import seaborn as sns
+```
+# Import essential Libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
 
-Input 1
+## Input 1
+
+```
 # More detailed info including memory usage
 
 df.info()
-Output 1
+```
+
+## Output 1
+```
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 250 entries, 0 to 249
 Data columns (total 17 columns):
@@ -134,12 +116,18 @@ Data columns (total 17 columns):
  15  Glucose          250 non-null    int64  
  16  TenYearCHD       250 non-null    int64  
 dtypes: float64(3), int64(13), object(1)
-memory usage: 33.3+ KB 
-Input 2
+memory usage: 33.3+ KB
+```
+
+## Input 2
+```
 #Get the summary of all variables / columns
 
 df.describe()
-Output 2
+```
+
+## Output 2
+```
 S. No	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
 count	250.000000	250.000000	250.00000	250.000000	250.000000	250.000000	250.000000	250.000000	250.000000	250.000000	250.00000	250.000000	250.000000	250.000000	250.000000	250.000000
 mean	125.500000	50.088000	2.48000	0.456000	6.688000	0.108000	0.024000	0.256000	0.080000	235.192000	129.42760	83.491200	26.288400	84.220000	88.012000	0.184000
@@ -149,7 +137,10 @@ min	1.000000	30.000000	1.00000	0.000000	0.000000	0.000000	0.000000	0.000000	0.00
 50%	125.500000	51.500000	2.00000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	237.500000	129.10000	84.050000	25.950000	86.000000	89.000000	0.000000
 75%	187.750000	61.000000	3.00000	1.000000	12.000000	0.000000	0.000000	1.000000	0.000000	260.750000	141.75000	91.475000	29.375000	99.000000	103.000000	0.000000
 max	250.000000	70.000000	4.00000	1.000000	30.000000	1.000000	1.000000	1.000000	1.000000	320.000000	180.90000	114.100000	41.700000	110.000000	163.000000	1.000000
-Input 3
+```
+
+## Input 3
+```
 #View first 10 rows
 
 df.head()
@@ -157,7 +148,10 @@ df.head()
 #View last 10 rows
 
 df.tail()
-Output 3
+```
+
+## Output 3
+```
 S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
 0	1	Female	68	1	1	3	0	1	0	0	237	107.8	71.2	30.9	81	70	0
 1	2	Female	58	4	1	1	0	0	0	0	268	113.2	94.7	26.8	108	58	0
@@ -172,10 +166,15 @@ S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	Preva
 247	248	Male	53	4	0	0	0	0	0	0	195	122.8	100.8	29.1	101	94	0
 248	249	Male	62	1	1	27	0	0	0	0	246	142.6	80.0	25.9	96	123	0
 249	250	Male	53	3	0	0	0	0	0	0	264	116.9	66.2	35.5	55	82	0
-Input 4
+```
+## Input 4
+```
 # Sorting and Grouping
 df.sort_values('Education', ascending=True)
-Output 4
+```
+
+## Output 4
+```
 S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
 0	1	Female	68	1	1	3	0	1	0	0	237	107.8	71.2	30.9	81	70	0
 4	5	Female	50	1	1	24	0	1	0	0	202	97.5	102.6	22.2	106	84	1
@@ -189,7 +188,10 @@ S. No	Gender	Age	Education	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	Preva
 247	248	Male	53	4	0	0	0	0	0	0	195	122.8	100.8	29.1	101	94	0
 241	242	Female	70	4	1	27	1	0	0	0	204	131.7	73.4	32.9	87	92	0
 250 rows × 17 columns
-Input 5
+```
+
+## Input 5
+```
 # Groupby functions
 df.groupby('Education').mean(numeric_only=True)
 
@@ -198,7 +200,9 @@ df.groupby('Education').median(numeric_only=True)
 df.groupby('Education').max(numeric_only=True)
 
 df.groupby('Education').min(numeric_only=True)
-Output 5
+```
+## Output 5
+```
 S. No	Age	currentsmoker	Cigsperday	BPMeds	Prevalentstroke	PrevalentHyp	Diabetes	Totalcholestrol	SysBP	DiaBP	BMI	Heartrate	Glucose	TenYearCHD
 Education															
 1	118.254237	49.050847	0.508475	8.220339	0.169492	0.050847	0.186441	0.050847	240.949153	125.896610	83.930508	26.106780	83.813559	86.135593	0.203390
@@ -229,12 +233,15 @@ Education
 2	3	30	0	0	0	0	0	0	144	85.0	61.7	16.0	55	45	0
 3	18	30	0	0	0	0	0	0	126	85.0	58.9	16.0	55	45	0
 4	2	31	0	0	0	0	0	0	150	87.7	57.1	18.0	55	45	0
-
-Input 6
+```
+## Input 6
+```
 # Calculate overall mean for all numeric columns
 print("\nOverall mean for all numeric columns:")
 print(df.mean(numeric_only=True))
-Output 6
+```
+## Output 6
+```
 Overall mean for all numeric columns:
 S. No              125.5000
 Age                 50.0880
@@ -253,22 +260,31 @@ Heartrate           84.2200
 Glucose             88.0120
 TenYearCHD           0.1840
 dtype: float64
-Input 7
+```
+## Input 7
 # Rename a column
 print("\nRenaming 'age' column to 'Age':")
 df.rename(columns={'age': 'Age'}, inplace=True)
-Output 7
+```
+## Output 7
+```
 Renaming 'age' column to 'Age':
-Input 8
+```
+## Input 8
+```
 # Display updated columns
 print("\nUpdated column names:")
 print(df.columns)
-Output8
+```
+## Output8
+```
 Updated column names:
 Index(['S. No', 'Gender', 'Age', 'Education', 'currentsmoker', 'Cigsperday',
        'BPMeds', 'Prevalentstroke', 'PrevalentHyp', 'Diabetes',
        'Totalcholestrol', 'SysBP', 'DiaBP', 'BMI', 'Heartrate', 'Glucose',
        'TenYearCHD'],
       dtype='object')
-Result
+```
+
+## Result
 The dataset was successfully cleaned and preprocessed. Data types were verified, missing values and duplicate values were identified, and statistics were generated. The data is now ready for further analysis such as EDA and regression modelling.
