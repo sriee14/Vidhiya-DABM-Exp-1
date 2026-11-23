@@ -27,42 +27,41 @@ The dataset is opened and analyzed using Jupyter Notebook to study its data stru
 ### 1.Data Loading and Basic Exploration
 
 Function/Method Descriptive
----------------- -------------------------------
+---------------------- ------------------------------------------------------
+```
+pd.read_csv() Reads a CSV file into a Pandas DataFrame.
+df.info() Displays column names, data types, and memory usage.
+df.dtypes Returns the data types of all columns.
+df['column'].dtype Returns the data type of a specific column.
+df.describe() Provides summary statistics for numerical columns.
+df.head() Displays the first 5 rows of the DataFrame.
+df.tail() Displays the last 5 rows of the DataFrame.\
+```
 
-
-2. Sorting and Grouping
+### 2. Sorting and Grouping
 
 Function / Method Description
-
-
+```
 df.sort_values() Sorts the DataFrame by one or more columns.
-
 df.groupby() Groups data based on one or more columns.
-
 groupby.sum() Returns the sum for each group.
-
 groupby.mean() Returns the mean for each group.
-
 groupby.median() Returns the median for each group.
-
 groupby.max() Returns the maximum value in each group.
-
 groupby.min() Returns the minimum value in each group.
+```
 
-
-
-3. Data Summary and Manipulation
+### 3. Data Summary and Manipulation
 
 Function / Method Description
-
+``
 df.mean() Calculates the mean for all numeric columns.
-
 df.rename() Renames columns in the DataFrame.
+``
 
-4. Optional Additions
-
+### 4. Optional Additions
 Function / Method Description
-
+````
 df.isnull().sum() Checks for missing values in each column.
 df.duplicated().sum() Counts duplicate rows.
 
@@ -71,6 +70,11 @@ df.fillna() Fills missing values with a specified value.
 df.drop_duplicates() Removes duplicate rows.
 df.shape Returns the number of rows and columns.
 df.columns Lists column names in the DataFrame.
+````
+
+
+
+
 
 Program
 Input
